@@ -1,0 +1,210 @@
+/* ===== RESET ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+blockquote {
+  margin-block-end: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: hsl(210, 46%, 95%);
+  font-family: manrope;
+}
+
+h1,
+h2 {
+  line-height: 1.1;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== BASE STYLES ===== */
+
+main {
+  margin-top: 5rem;
+  margin-bottom: 20rem;
+}
+
+.imgWrap {
+  height: 245px;
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.imgWrap img {
+  width: 100%;
+  transform: translateY(-20px);
+}
+
+.prevCard {
+  max-width: 400px;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.textContent {
+  background-color: white;
+  padding: 2.2rem;
+  text-align: left;
+  max-width: 95%;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 30px;
+  color: hsl(217, 19%, 35%);
+}
+
+.cardPara {
+  font-size: 0.9rem;
+  line-height: 25px;
+  color: hsl(214, 17%, 51%);
+}
+
+/* ===== CARD-FOOTERS ===== */
+
+.cardFooter {
+  width: 77%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatarImg {
+  border-radius: 50%;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.namedate {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.name {
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+}
+
+.date {
+  color: hsl(214, 17%, 51%);
+}
+
+.shareBtn {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(211, 33%, 88%);
+  border-radius: 50%;
+  margin-left: auto;
+  transform: translateX(7px);
+}
+
+.shareBtn:hover {
+  cursor: pointer;
+  background-color: hsl(212, 23%, 69%);
+  fill: white;
+}
+
+.shareBtn:hover path {
+  fill: white;
+}
+
+.footerSocials {
+  background-color: hsl(217, 19%, 35%);
+  padding: 1rem;
+  padding-left: 3rem;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  border-radius: 0 0 15px 15px;
+}
+
+.shareSocials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.share {
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.7rem;
+}
+
+.facebook:hover,
+.twitter:hover,
+.pinterest:hover {
+  cursor: pointer;
+}
+
+.shareBtnActive {
+  margin-left: auto;
+  margin-right: 1.4rem;
+}
+
+.shareBtnActive,
+.arrowActive {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: hsl(214, 17%, 51%);
+  fill: white;
+}
+
+/* footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
