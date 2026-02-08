@@ -71,18 +71,17 @@ main {
   background-color: white;
   padding: 2.2rem;
   text-align: left;
-  max-width: 95%;
 }
 
 h1 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.3rem;
   line-height: 30px;
   color: hsl(217, 19%, 35%);
 }
 
 .cardPara {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 25px;
   color: hsl(214, 17%, 51%);
 }
@@ -95,7 +94,7 @@ h1 {
   align-items: center;
   justify-content: left;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
 }
 
 .avatarImg {
@@ -250,18 +249,20 @@ h1 {
     flex-direction: row;
     align-items: stretch;
     justify-content: flex-start;
-    border-radius: 15px;
+    border-radius: 15px 15px 15px 15px;
     overflow: visible;
   }
 
   .text-and-footers {
     flex: 1;
+    border-radius: 0px 15px 15px 15px;
   }
 
   .textContent {
   background-color: white;
-  padding: 2.2rem;
+  padding: 2rem;
   text-align: left;
+  border-radius: 0 15px;
 }
 
 .footerSocials {
