@@ -1,1 +1,1 @@
-![Work in progress](./images/work-in-progress.png)
+<div style="text-align: center;">![Work in progress](./images/work-in-progress.png)</div>
