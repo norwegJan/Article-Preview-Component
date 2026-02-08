@@ -1,1 +1,1 @@
-![Work in progress](./images/work-in-progress-wip.jpg)
+![Work in progress](./images/work-in-progress.png)
