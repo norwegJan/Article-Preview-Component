@@ -46,7 +46,7 @@ main {
   border-radius: 15px 15px 0px 0px;
 }
 
-.imgWrap img {
+.drawersImg {
   width: 100%;
   transform: translateY(-20px);
 }
@@ -60,6 +60,11 @@ main {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
+}
+
+.text-and-footers {
+  display: flex;
+  flex-direction: column;
 }
 
 .textContent {
@@ -85,7 +90,7 @@ h1 {
 /* ===== CARD-FOOTERS ===== */
 
 .cardFooter {
-  width: 77%;
+  padding: 0.6rem 3rem;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -143,12 +148,11 @@ h1 {
 
 .footerSocials {
   background-color: hsl(217, 19%, 35%);
-  padding: 1rem;
-  padding-left: 3rem;
+  padding: 0.3rem 1rem;
   width: 100%;
-  display: none;
+  display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   gap: 1rem;
   border-radius: 0 0 15px 15px;
 }
@@ -156,7 +160,8 @@ h1 {
 .shareSocials {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  padding: 2rem;
   gap: 1.5rem;
 }
 
@@ -171,7 +176,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1.7rem;
 }
 
@@ -182,12 +187,6 @@ h1 {
 }
 
 .shareBtnActive {
-  margin-left: auto;
-  margin-right: 1.4rem;
-}
-
-.shareBtnActive,
-.arrowActive {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -196,7 +195,69 @@ h1 {
   align-items: center;
   cursor: pointer;
   background-color: hsl(214, 17%, 51%);
+  margin-left: auto;
+  margin-right: 1.4rem;
+}
+
+.arrowActive {
   fill: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== DESKTOP LAYOUT ===== */
+
+@media (min-width: 875px) {
+  main {
+    margin-top: 15rem;
+  }
+
+  .imgWrap {
+    display: flex;
+    flex: 0 0 390px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    align-self: stretch;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  .drawersImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: 0% 50%;
+    display: block;
+    object-position: 0% 30%;
+  }
+
+  .prevCard {
+    max-width: 775px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    border-radius: 15px;
+    overflow: hidden;
+    background: tomato;
+  }
+
+  .text-and-footers {
+    flex: 1;
+    background: cyan;
+  }
+
+  .textContent {
+  background-color: white;
+  padding: 2.2rem;
+  text-align: left;
+}
 }
 
 /* footer */
