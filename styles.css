@@ -75,7 +75,7 @@ main {
 }
 
 h1 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
   line-height: 30px;
   color: hsl(217, 19%, 35%);
@@ -168,7 +168,7 @@ h1 {
 .share {
   color: hsl(212, 23%, 69%);
   letter-spacing: 4px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -203,9 +203,15 @@ h1 {
   fill: white;
 }
 
-.hidden {
+.triangle {
   display: none;
 }
+
+
+.hidden-mobile-only {
+  display: none;
+}
+
 
 /* ===== DESKTOP LAYOUT ===== */
 
@@ -232,11 +238,12 @@ h1 {
     object-fit: cover;
     object-position: 0% 50%;
     display: block;
-    object-position: 0% 30%;
+    transform: translateY(0);
   }
 
   .prevCard {
-    max-width: 775px;
+    max-width: 788px;
+    max-height: 400px;
     background-color: white;
     margin: auto;
     display: flex;
@@ -244,13 +251,11 @@ h1 {
     align-items: stretch;
     justify-content: flex-start;
     border-radius: 15px;
-    overflow: hidden;
-    background: tomato;
+    overflow: visible;
   }
 
   .text-and-footers {
     flex: 1;
-    background: cyan;
   }
 
   .textContent {
@@ -258,6 +263,48 @@ h1 {
   padding: 2.2rem;
   text-align: left;
 }
+
+.footerSocials {
+  background-color: #48556a;
+  padding: 0;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 15px 15px 15px 15px;
+  transform: translate(177px, -205px);
+  overflow: visible;
+  filter:drop-shadow(15px 15px 10px gray);
+}
+
+.share {
+  transform: translateX(10px);
+  font-size: 1rem;
+}
+
+.socials {
+  transform: translateX(40px);
+  gap: 1.3rem;
+}
+
+.triangle {
+  display: block;
+  transform: translate(-115px, 55px);
+}
+
+.shareBtnActive {
+  display: none;
+}
+
+.hidden-mobile-only {
+  display: flex;
+}
+
+}
+
+.hidden {
+  display: none;
 }
 
 /* footer */

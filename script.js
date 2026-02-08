@@ -4,11 +4,11 @@ const footerSocials = document.querySelector(".footerSocials");
 const cardFooter = document.querySelector(".cardFooter");
 
 shareBtn.addEventListener("click", (e) => {
-  footerSocials.classList.remove("hidden");
-  cardFooter.classList.add("hidden");
+  footerSocials.classList.toggle("hidden");
+  cardFooter.classList.toggle("hidden-mobile-only");
 });
 
 shareBtnActive.addEventListener("click", (e) => {
-  cardFooter.classList.remove("hidden");
-  footerSocials.classList.add("hidden");
+  cardFooter.classList.toggle("hidden-mobile-only");
+  footerSocials.classList.toggle("hidden");
 });
