@@ -9,7 +9,6 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot mobile](./images/screenshot%20mobile.png)
 ![Screenshot desktop (active)](./images/screenshot%20desktop%20(active).png)
 
 
